@@ -14,7 +14,8 @@
                 <VerticalStackLayout Padding="10">
                     <Label Text="{Binding Nombre}" FontAttributes="Bold"/>
                     <Label Text="{Binding Empresa}" />
-                    <Label Text="Antigüedad: {Binding AntiguedadMeses} meses" />
+                    <Label Text="{Binding AntiguedadMeses, StringFormat='Antigüedad: {0} meses'}" />
+                    <Label Text="{Binding AntiguedadDias, StringFormat='Antigüedad: {0} días'}" />
                     <Label Text="{Binding Activo, StringFormat='Activo: {0}'}" />
                 </VerticalStackLayout>
             </DataTemplate>

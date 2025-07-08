@@ -14,6 +14,9 @@ namespace ExamenProgreso3_JulianTorres.Models
         public string Nombre { get; set; }
         public string Empresa { get; set; }
         public int AntiguedadMeses { get; set; }
+        
+        [Ignore]
+        public int AntiguedadDias => AntiguedadMeses * 10;
         public bool Activo { get; set; }
     }
 }
