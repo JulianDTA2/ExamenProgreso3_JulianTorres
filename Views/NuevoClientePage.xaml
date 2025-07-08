@@ -14,8 +14,9 @@
             <Entry Placeholder="Nombre" Text="{Binding Nombre}" />
             <Entry Placeholder="Empresa" Text="{Binding Empresa}" />
             <Entry Placeholder="Antigüedad (meses)" Keyboard="Numeric" Text="{Binding AntiguedadMeses}" />
+
+            <Label Text="Activo"/>
             <CheckBox IsChecked="{Binding Activo}" />
-            <Label Text="Activo" />
 
             <Button Text="Guardar Cliente"
                     Command="{Binding GuardarClienteCommand}" />
