@@ -4,12 +4,19 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ExamenProgreso3_JulianTorres"
+    xmlns:views="clr-namespace:ExamenProgreso3_JulianTorres.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="ExamenProgreso3_JulianTorres">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent Title="Nuevo" Icon="add.png"
+                      ContentTemplate="{DataTemplate views:NuevoClientePage}" />
+
+        <ShellContent Title="Clientes" Icon="list.png"
+                      ContentTemplate="{DataTemplate views:ListaClientesPage}" />
+
+        <ShellContent Title="Logs" Icon="file.png"
+                      ContentTemplate="{DataTemplate views:LogsPage}" />
+    </TabBar>
 
 </Shell>
