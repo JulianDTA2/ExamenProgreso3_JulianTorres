@@ -13,8 +13,10 @@
         <VerticalStackLayout Padding="20" Spacing="15">
             <Entry Placeholder="Nombre" Text="{Binding Nombre}" />
             <Entry Placeholder="Empresa" Text="{Binding Empresa}" />
+            <Label Text="Antigüedad (maximo 1500 dias)"/>
+            <Label Text="Tomar en cuenta que la cantidad ingresada se multiplicaria por diez"
+                   TextColor="Red"/>
             <Entry Placeholder="Antigüedad (meses)" Keyboard="Numeric" Text="{Binding AntiguedadMeses}" />
-
             <Label Text="Activo"/>
             <CheckBox IsChecked="{Binding Activo}" />
 

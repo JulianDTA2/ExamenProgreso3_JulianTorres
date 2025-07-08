@@ -38,7 +38,7 @@ namespace ExamenProgreso3_JulianTorres.ViewModels
         [RelayCommand]
         public async Task GuardarClienteAsync()
         {
-            if (AntiguedadMeses > 150)
+            if (AntiguedadMeses * 10 > 1500)
             {
                 await Shell.Current.DisplayAlert("Error", "No se puede registrar una empresa con más de 1500 días de antigüedad.", "OK");
                 return;
